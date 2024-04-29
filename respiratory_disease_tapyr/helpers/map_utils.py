@@ -15,7 +15,7 @@ def determine_circle_radius(num: float) -> int:
     coefficients = [1.1, 0.8, 0.75]
     final_coef = 0.2
 
-    for bin, coef in zip(bins, coefficients):
+    for bin, coef in zip(bins, coefficients, strict=True):
         if num in bin:
             return int(num * coef)
     return int(num * final_coef)
@@ -46,7 +46,7 @@ def determine_circle_color(num: float) -> str:
     ]
     final_color = "#08589E"
 
-    for bin, color in zip(bins, colors):
+    for bin, color in zip(bins, colors, strict=True):
         if num in bin:
             return color
     return final_color
@@ -81,7 +81,7 @@ def add_polygons(
     polygons_layer.clear_layers()
     combined_data = merge(polygon_data, points_data, left_on="id", right_on="Code")
     geo_data = dataframe_to_geojson(combined_data)
-    choro_data = dict(zip(combined_data["id"], combined_data["Death.Rate"]))
+    choro_data = dict(zip(combined_data["id"], combined_data["Death.Rate"], strict=True))
     choropleth_layer = Choropleth(
         geo_data=geo_data,
         choro_data=choro_data,

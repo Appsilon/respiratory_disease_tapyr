@@ -11,7 +11,7 @@ from respiratory_disease_tapyr.helpers.helper_text import (
 )
 from respiratory_disease_tapyr.logic.data_loading import plot_data_oecd
 
-country_choices = plot_data_oecd["Entity"].unique().tolist() + ["World"]
+country_choices = [*plot_data_oecd["Entity"].unique().tolist(), "World"]
 
 
 @module.ui

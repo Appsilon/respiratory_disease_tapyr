@@ -6,7 +6,7 @@ from shinywidgets import (
 from respiratory_disease_tapyr.helpers.plot_utils import create_figure
 from respiratory_disease_tapyr.logic.data_loading import plot_data_oecd, plot_data_world_bank
 
-country_choices = plot_data_oecd["Entity"].unique().tolist() + ["World"]
+country_choices = [*plot_data_oecd["Entity"].unique().tolist(), "World"]
 
 
 @module.server
