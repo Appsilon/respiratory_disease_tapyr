@@ -1,10 +1,9 @@
 # Respiratory Disease: Tapyr Version
 
 This repository contains the tapyr migration of [the pure PyShiny Respiratory Disease dashboard](https://github.com/Appsilon/respiratory_disease_pyshiny), which originates from the R/Shiny version [Respiratory Disease app](https://connect.appsilon.com/respiratory_disease_app_sprint/).
-The `main` branch contains the migrated and updated version of the app, while the `original` branch contains the original version of the app migrated to the Tapyr template with minimal effort.
 
 ## Explore the app
-The app is deployed at [Appsilon Posit Connect](https://connect.appsilon.com/respiratory_disease_pyshiny/).
+The app is deployed at [Appsilon Posit Connect](https://connect.appsilon.com/respiratory-disease-tapyr/).
 
 ## How to run
 
