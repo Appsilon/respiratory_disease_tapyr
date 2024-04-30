@@ -22,7 +22,7 @@ pandas = "^1.4.3"
 geopandas = "*"
 shinywidgets = "*"
 ipywidgets = "^7.7.1"
-ipyleaflet = "^0.17.0"
+ipyleaflet = "^0.19.0"
 branca = "^0.5.0"
 numpy = "^1.23.1"
 
