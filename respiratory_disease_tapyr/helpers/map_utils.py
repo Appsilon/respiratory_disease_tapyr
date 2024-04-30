@@ -57,14 +57,14 @@ def add_circles(geodata: DataFrame, circle_layer: LayerGroup) -> None:
     circle_layer.clear_layers()
     circle_markers = []
     for _, row in geodata.iterrows():
-        popup = HTML(f"<b>{row.Entity}:</b></br>" + str(round(row["Death.Rate"], 2)))
+        popup = HTML(f"<b>{row.Entity}:</b></br>" + str(round(row.loc["Death.Rate"], 2)))
         circle_marker = CircleMarker(
             location=[row["lat"], row["lng"]],
-            radius=determine_circle_radius(row["Death.Rate"]),
+            radius=determine_circle_radius(row.loc["Death.Rate"]),
             weight=1,
             color="white",
             opacity=0.7,
-            fill_color=determine_circle_color(row["PM2.5"]),
+            fill_color=determine_circle_color(row.loc["PM2.5"]),
             fill_opacity=0.5,
             popup=popup,
         )
@@ -107,7 +107,7 @@ def add_polygons(
 
 
 def filter_data(data: DataFrame, year: int) -> DataFrame:
-    return data[data["Year"] == year]
+    return data.loc[data["Year"] == year]
 
 
 def dataframe_to_geojson(df: DataFrame) -> dict:
