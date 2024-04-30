@@ -1,21 +1,14 @@
-# Tapyr - Shiny for Python Application Template<a href="https://appsilon.github.io/tapyr-template/"><img src="www/images/tapyr.png" align="right" alt="Tapyr logo" style="height: 140px;"></a>
+# Respiratory Disease: Tapyr Version
 
-> Create and deploy enterprise-ready PyShiny dashboards with ease.
+This repository contains the tapyr migration of [the pure PyShiny Respiratory Disease dashboard](https://github.com/Appsilon/respiratory_disease_pyshiny), which originates from the R/Shiny version [Respiratory Disease app](https://connect.appsilon.com/respiratory_disease_app_sprint/).
+The `main` branch contains the migrated and updated version of the app, while the `original` branch contains the original version of the app migrated to the Tapyr template with minimal effort.
 
-# WIP: Not the final version of README.
+## Explore the app
+The app is deployed at [Appsilon Posit Connect](https://connect.appsilon.com/respiratory_disease_pyshiny/).
 
-## Introduction
+## How to run
 
-Tapyr is designed for data scientists and developers seeking a seamless transition from development to deployment, this template uses `poetry` for dependency management and `pytest`/`playwright` for comprehensive app validation/testing/quality assurance.
-Ideal for projects aiming for high-quality code and efficient deployment on Posit Connect.
-
-## Docs
-
-For comprehensive documentation, please visit our [documentation TODO](TODO).
-
-## Getting Started
-
-Check out our get started with `tapyr` [blog post TODO](TOOD).
+(This section is copied from the tapyr template)
 
 ### Using Devcontainer
 
