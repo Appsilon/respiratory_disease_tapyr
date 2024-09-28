@@ -23,7 +23,7 @@ geopandas = "*"
 shinywidgets = "*"
 ipywidgets = "^7.7.1"
 ipyleaflet = "^0.17.0"
-branca = "^0.5.0"
+branca = "^0.8.0"
 numpy = "^1.23.1"
 
 [tool.poetry.group.dev.dependencies]
